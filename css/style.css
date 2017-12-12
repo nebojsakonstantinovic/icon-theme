@@ -102,7 +102,7 @@ figure {
 .landing{
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 200px;
+/*    padding-top: 200px;*/
     position: relative;
 }
 
@@ -116,8 +116,28 @@ figure {
     background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)); /*Standard*/
 }
 
+.landing .container .row{
+    min-height: 100vh;
+/*    padding-top: 200px;*/
+}
+
 .landing article{
     padding-right: 35px;
+}
+.landing .container{
+    position: relative;
+}
+
+.landing .container > a{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.landing .container > a .fa{
+    font-size: 32px;
+    color: #fff;
 }
 
 .landing a{
@@ -378,3 +398,45 @@ footer .nav{
     padding: 0.75rem 1.25rem;
 }
 
+/* code od procenata */
+
+.svg{
+    transform: rotate(-90deg);
+}
+
+.svg circle {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  stroke: #333;
+  stroke-width: 1em;
+}
+.svg .bar {
+  stroke: #2dade8;
+}
+.cont {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 2em auto;
+/*  box-shadow: 0 0 1em black;*/
+  border-radius: 100%;
+  position: relative;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+}
+.cont:after {
+  position: absolute;
+  display: block;
+  height: 160px;
+  width: 160px;
+  left: 50%;
+  top: 50%;
+/*  box-shadow: inset 0 0 1em black;*/
+  content: attr(data-pct)"%";
+  margin-top: -80px;
+  margin-left: -80px;
+  border-radius: 100%;
+  line-height: 160px;
+  font-size: 2em;
+  text-shadow: 0 0 0.5em black;
+}

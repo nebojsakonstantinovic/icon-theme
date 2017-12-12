@@ -3,15 +3,15 @@ $(document).ready(function () {
 
     //spy-scroll
 
-    $('.navbar-nav a').click(function () {
+    $('.navbar-nav a, .landing .container > a').click(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
     });
-    
-    
+
+
     // header smanjivanje
-    
+
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 150) {
@@ -24,4 +24,41 @@ $(document).ready(function () {
             $('.navbar-brand').removeClass('small-logo');
         }
     });
+
+
+    //code od proenata
+    $(window).scroll(function () {
+       percent();
+    });
+    percent();
+    
+    function percent(){
+         var wh = $(window).height();
+        var scroll = $(window).scrollTop();
+
+        $('.cont').each(function () {
+            var position = $(this).offset().top;
+            
+            
+            if(position < wh + scroll - 100){
+                           var val = parseInt($(this).attr('data-pct'));
+            var $circle = $(this).find('.svg .bar');
+
+           
+
+                var r = $circle.attr('r');
+                var c = Math.PI * (r * 2);
+
+                var pct = ((100 - val) / 100) * c;
+
+                $circle.css({strokeDashoffset: pct});
+            } 
+            
+            
+            
+
+        });
+        
+    }
+
 });
