@@ -8,7 +8,7 @@
         <meta name="description" content="Icon, Wordpress theme">
         <meta name="keywords" content="word press, theme, landing">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>BOOTSTRAP 4</title>
+        <title>Icon</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -17,17 +17,18 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 
-       
+        <!--owl caurosel --> 
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        
         <!--CSS -->
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
-        
-         <!--owl caurosel --> 
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+
+       
         <!--stars awesome -->
         <link href="css/fontawesome-stars-o.css" rel="stylesheet" type="text/css"/>
-        
-        
+
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -36,6 +37,9 @@
         <![endif]-->
     </head>
     <body data-spy="scroll" data-target="#main-menu">
+
+
+        <!-- HEADER STARTS -->
 
         <header style="background-color: rgba(0,0,0,0.3)">
             <div class="container">
@@ -67,7 +71,14 @@
             </div>
         </header>
 
+        <!-- HEADER ENDS -->
+
+        <!-- MAIN STARTS -->
+
         <main>
+
+            <!-- SECTION 1 STARTS  NAME = landing -->            
+
             <section class="landing" style="background-image: url('img/mountan.jpg')">
                 <div class="container">
                     <div class="row">
@@ -95,10 +106,16 @@
                         </div>
                     </div>
                     <a href="#about">
-                        <span class="fa fa-chevron-circle-down"></span>
+                        <!--<span class="fa fa-chevron-circle-down"></span>-->
+                        <img src="img/mis.png" alt=""/>
                     </a>
                 </div>
             </section>
+
+            <!-- SECTION 1 ENDS -->
+
+            <!-- SECTION 2 STARTS NAME = how -->
+
             <section class="how" id="about" style="background-image: url('img/programing.jpg')">
                 <div class="container">
                     <div class="row">
@@ -147,6 +164,11 @@
                     </div>
                 </div>
             </section>
+
+            <!-- SECTION 2 ENDS -->
+
+            <!-- SECTION 3 STARTS  NAME = rating -->
+
             <section class="rating" id="numbers" style="background-image: url('img/mountan.jpg');">
                 <div class="container">
                     <div class="row text-center">
@@ -204,6 +226,11 @@
                     </div>
                 </div>
             </section>
+
+            <!-- SECTION 3 ENDS -->
+
+            <!-- SECTION 4 STARTS  NAME = star -->
+
             <section class="star" style="background-color: #fff;">
                 <div class="container">
                     <ul class="owl-carousel team list-unstyled text-center">
@@ -213,13 +240,14 @@
                                     <img src="img/Elijah.jpg" alt=""/>
                                 </figure>
                                 <p class="lead">using everyday</p>
-                                <span class="star-icons d-inline-block">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star-o"></span>
-                                </span>
+                                <select class="example-fontawesome-o" name="rating" data-current-rating="4" autocomplete="off">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                                 <p>By enriching your mind and building yourself 
                                     up mentally you will be able to challenge 
                                     yourself to take on other areas of your life 
@@ -233,13 +261,14 @@
                                     <img src="img/Dominic.jpg" alt=""/>
                                 </figure>
                                 <p class="lead">using everyday</p>
-                                <span class="star-icons d-inline-block">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </span>
+                                <select class="example-fontawesome-o" name="rating" data-current-rating="5" autocomplete="off">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                                 <p>By enriching your mind and building yourself 
                                     up mentally you will be able to challenge 
                                     yourself to take on other areas of your life 
@@ -253,13 +282,14 @@
                                     <img src="img/Erick.jpg" alt=""/>
                                 </figure>
                                 <p class="lead">using everyday</p>
-                                <span class="star-icons d-inline-block">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star-half-o"></span>
-                                </span>
+                                <select class="example-fontawesome-o" name="rating" data-current-rating="4.5" autocomplete="off">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                                 <p>By enriching your mind and building yourself 
                                     up mentally you will be able to challenge 
                                     yourself to take on other areas of your life 
@@ -273,7 +303,7 @@
                                     <img src="img/Elijah.jpg" alt=""/>
                                 </figure>
                                 <p class="lead">using everyday</p>
-                                <select id="example-fontawesome-o" name="rating" data-current-rating="3.6" autocomplete="off">
+                                <select class="example-fontawesome-o" name="rating" data-current-rating="4" autocomplete="off">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -281,13 +311,6 @@
                                     <option value="4">4</option>
                                     <option value="5">5</option>
                                 </select>
-                                <!--                                <span class="star-icons d-inline-block">
-                                                                    <span class="fa fa-star"></span>
-                                                                    <span class="fa fa-star"></span>
-                                                                    <span class="fa fa-star"></span>
-                                                                    <span class="fa fa-star"></span>
-                                                                    <span class="fa fa-star-o"></span>
-                                                                </span>-->
                                 <p>By enriching your mind and building yourself 
                                     up mentally you will be able to challenge 
                                     yourself to take on other areas of your life 
@@ -301,13 +324,14 @@
                                     <img src="img/Dominic.jpg" alt=""/>
                                 </figure>
                                 <p class="lead">using everyday</p>
-                                <span class="star-icons d-inline-block">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </span>
+                                <select class="example-fontawesome-o" name="rating" data-current-rating="5" autocomplete="off">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                                 <p>By enriching your mind and building yourself 
                                     up mentally you will be able to challenge 
                                     yourself to take on other areas of your life 
@@ -321,13 +345,14 @@
                                     <img src="img/Erick.jpg" alt=""/>
                                 </figure>
                                 <p class="lead">using everyday</p>
-                                <span class="star-icons d-inline-block">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star-half-o"></span>
-                                </span>
+                                <select class="example-fontawesome-o" name="rating" data-current-rating="4.5" autocomplete="off">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                                 <p>By enriching your mind and building yourself 
                                     up mentally you will be able to challenge 
                                     yourself to take on other areas of your life 
@@ -339,6 +364,11 @@
 
                 </div>
             </section>
+
+            <!-- SECTION 4 ENDS -->
+
+            <!-- SECTION 5 STARTS  NAME = feedback -->
+
             <section class="feedback py-5" id="feedback"  style="background-image:linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/forest.jpg')">
                 <div class="container">
                     <div class="row">
@@ -406,7 +436,15 @@
                     </form>
                 </div>
             </section>
+
+            <!-- SECTION 5 ENDS -->
+
         </main>
+
+        <!-- MAIN ENDS -->
+
+        <!-- FOOTER STARTS -->
+
         <footer style="background-color: #333;">
             <div class="container">
                 <div class="row">
@@ -452,15 +490,9 @@
             </div>
         </footer>
 
+        <!-- FOOTER ENDS -->
 
-
-
-
-
-
-
-
-
+        <!-- JS STARTS -->
 
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/poper.js" type="text/javascript"></script>
@@ -468,15 +500,16 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
-        <!--owl -->
+        <!--Owl carousel -->
         <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-        <!--validate form -->
+        <!--Validate form -->
         <script src="js/jquery.validate.min.js" type="text/javascript"></script>
-        <!-- rating JS min -->
+        <!-- Rating JS min -->
         <script src="js/jquery.barrating.min.js" type="text/javascript"></script>
-
+        <!--Main JS -->
         <script src="js/main.js" type="text/javascript"></script>
 
+        <!--Form Validation -->        
         <script type="text/javascript">
             $(document).ready(function () {
                 $(function () {
@@ -513,9 +546,13 @@
                     });
                 });
             });
-            //Form Validation
+
+            //Form Validation ends
 
 
-        </script>-->
+        </script>
+
+        <!-- JS ENDS -->
+
     </body>
 </html>

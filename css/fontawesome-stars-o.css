@@ -10,26 +10,34 @@
   margin-right: 2px;
 }
 .br-theme-fontawesome-stars-o .br-widget a:after {
-  content: '\f006';
-  color: #d2d2d2;
+    content: '\f006';
+    color: #2dade8;
+    text-shadow: 0 5px 10px rgba(45,173,232,0.5);
+    font-size: 25px;
 }
 .br-theme-fontawesome-stars-o .br-widget a.br-active:after {
-  content: '\f005';
-  color: #50E3C2;
+    content: '\f005';
+    color: #2dade8;
+    text-shadow: 0 5px 10px rgba(45,173,232,0.5);
+    font-size: 25px;
 }
 .br-theme-fontawesome-stars-o .br-widget a.br-selected:after {
-  content: '\f005';
-  color: #50E3C2;
+    content: '\f005';
+    color: #2dade8;
+    text-shadow: 0 5px 10px rgba(45,173,232,0.5);
+    font-size: 25px;
 }
 .br-theme-fontawesome-stars-o .br-widget a.br-fractional:after {
-  content: '\f123';
-  color: #50E3C2;
+    content: '\f123';
+    color: #2dade8;
+    text-shadow: 0 5px 10px rgba(45,173,232,0.5);
+    font-size: 25px;
 }
 .br-theme-fontawesome-stars-o .br-widget .br-current-rating {
-  display: none;
+    display: none;
 }
 .br-theme-fontawesome-stars-o .br-readonly a {
-  cursor: default;
+    cursor: default;
 }
 .br-theme-fontawesome-stars-o .br-reverse a.br-fractional {
   display: inline-block;

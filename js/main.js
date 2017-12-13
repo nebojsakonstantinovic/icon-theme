@@ -26,25 +26,24 @@ $(document).ready(function () {
     });
 
 
-    //code od proenata
+    //code od proenata round slider
+
     $(window).scroll(function () {
-       percent();
+        percent();
     });
     percent();
-    
-    function percent(){
-         var wh = $(window).height();
+
+    function percent() {
+        var wh = $(window).height();
         var scroll = $(window).scrollTop();
 
         $('.cont').each(function () {
             var position = $(this).offset().top;
-            
-            
-            if(position < wh + scroll - 100){
-                           var val = parseInt($(this).attr('data-pct'));
-            var $circle = $(this).find('.svg .bar');
 
-           
+
+            if (position < wh + scroll - 100) {
+                var val = parseInt($(this).attr('data-pct'));
+                var $circle = $(this).find('.svg .bar');
 
                 var r = $circle.attr('r');
                 var c = Math.PI * (r * 2);
@@ -52,28 +51,23 @@ $(document).ready(function () {
                 var pct = ((100 - val) / 100) * c;
 
                 $circle.css({strokeDashoffset: pct});
-            } 
-            
-            
-            
-
+            }
         });
-        
     }
 
 
 
 
 
-    //owl
+    //owl carousel
 
     if ($('.owl-carousel').length > 0) {
         $('.team').owlCarousel({
             loop: true,
             margin: 10,
-            dots:false,
-            nav:true,
-            navText:['<','>'],
+            dots: false,
+            nav: true,
+            navText: ['<', '>'],
             responsiveClass: true,
             responsive: {
                 0: {
@@ -85,53 +79,56 @@ $(document).ready(function () {
                 768: {
                     items: 3
                 }
-                
             }
         });
-        }
+    }
 
 
 
-        //zvezde
+    //zvezde
 
-        var currentRating = $('#example-fontawesome-o').data('current-rating');
+    $('.example-fontawesome-o').each(function () {
+        var currentRating = $(this).data('current-rating');
 
-        $('.stars-example-fontawesome-o .current-rating')
-            .find('span')
-            .html(currentRating);
+        $(this).find('.current-rating')
+                .find('span')
+                .html(currentRating);
 
-        $('.stars-example-fontawesome-o .clear-rating').on('click', function(event) {
+        $(this).find('.clear-rating').on('click', function (event) {
             event.preventDefault();
 
-            $('#example-fontawesome-o')
-                .barrating('clear');
+            $(this)
+                    .barrating('clear');
         });
-
-        $('#example-fontawesome-o').barrating({
+        $(this).barrating({
             theme: 'fontawesome-stars-o',
             showSelectedRating: false,
             initialRating: currentRating,
-            onSelect: function(value, text) {
+            onSelect: function (value, text) {
                 if (!value) {
-                    $('#example-fontawesome-o')
-                        .barrating('clear');
+                    $(this)
+                            .barrating('clear');
                 } else {
-                    $('.stars-example-fontawesome-o .current-rating')
-                        .addClass('hidden');
+                    $(this).find('.current-rating')
+                            .addClass('hidden');
 
-                    $('.stars-example-fontawesome-o .your-rating')
-                        .removeClass('hidden')
-                        .find('span')
-                        .html(value);
+                    $(this).find('.your-rating')
+                            .removeClass('hidden')
+                            .find('span')
+                            .html(value);
                 }
             },
-            onClear: function(value, text) {
-                $('.stars-example-fontawesome-o')
-                    .find('.current-rating')
-                    .removeClass('hidden')
-                    .end()
-                    .find('.your-rating')
-                    .addClass('hidden');
+            onClear: function (value, text) {
+                $(this).find('.stars-example-fontawesome-o')
+                        .find('.current-rating')
+                        .removeClass('hidden')
+                        .end()
+                        .find('.your-rating')
+                        .addClass('hidden');
             }
         });
+    });
+
+
+
 });
