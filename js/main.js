@@ -15,11 +15,11 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 150) {
-            $('header').addClass('py-2');
+            $('header').addClass('py-md-2');
             $('header').css('background-color', 'rgba(0,0,0,0.6)');
             $('.navbar-brand').addClass('small-logo');
         } else {
-            $('header').removeClass('py-2');
+            $('header').removeClass('py-md-2');
             $('header').css('background-color', 'rgba(0,0,0,0.3)');
             $('.navbar-brand').removeClass('small-logo');
         }
